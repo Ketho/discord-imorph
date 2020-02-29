@@ -1,0 +1,542 @@
+{
+	"207": {
+		"name": "Black Wolf",
+		"item": 1041,
+		"source": "Horn of the Black Wolf"
+	},
+	"247": {
+		"name": "Large Timber Wolf",
+		"item": 1132,
+		"source": "Horn of the Timber Wolf"
+	},
+	"1166": {
+		"name": "Arctic Wolf",
+		"item": 12351,
+		"source": "Horn of the Arctic Wolf"
+	},
+	"2320": {
+		"name": "Gray Wolf",
+		"item": 1134,
+		"source": "Horn of the Gray Wolf"
+	},
+	"2326": {
+		"name": "Red Wolf",
+		"item": 12330,
+		"source": "Horn of the Red Wolf"
+	},
+	"2327": {
+		"name": "Dire Wolf",
+		"item": 5665,
+		"source": "Horn of the Dire Wolf"
+	},
+	"2328": {
+		"name": "Brown Wolf",
+		"item": 5668,
+		"source": "Horn of the Brown Wolf"
+	},
+	"2346": {
+		"name": "Felsteed",
+		"spell": 5784,
+		"source": "Summon Felsteed"
+	},
+	"2402": {
+		"name": "Black Stallion",
+		"item": 2411,
+		"source": "Black Stallion Bridle"
+	},
+	"2404": {
+		"name": "Brown Horse",
+		"item": 5656,
+		"source": "Brown Horse Bridle"
+	},
+	"2405": {
+		"name": "Chestnut Mare",
+		"item": 5655,
+		"source": "Chestnut Mare Bridle"
+	},
+	"2408": {
+		"name": "Palomino Stallion",
+		"item": 12354,
+		"source": "Palomino Bridle"
+	},
+	"2409": {
+		"name": "Pinto Horse",
+		"item": 2414,
+		"source": "Pinto Bridle"
+	},
+	"2410": {
+		"name": "White Stallion",
+		"item": 12353,
+		"source": "White Stallion Bridle"
+	},
+	"2736": {
+		"name": "Gray Ram",
+		"item": 5864,
+		"source": "Gray Ram"
+	},
+	"2784": {
+		"name": "Black Ram",
+		"item": 13328,
+		"source": "Black Ram"
+	},
+	"2785": {
+		"name": "Brown Ram",
+		"item": 5872,
+		"source": "Brown Ram"
+	},
+	"2786": {
+		"name": "White Ram",
+		"item": 5873,
+		"source": "White Ram"
+	},
+	"2787": {
+		"name": "Frost Ram",
+		"item": 13329,
+		"source": "Frost Ram"
+	},
+	"4805": {
+		"name": "Primal Leopard",
+		"item": 12325,
+		"source": "Reins of the Primal Leopard"
+	},
+	"4806": {
+		"name": "Emerald Raptor",
+		"item": 8588,
+		"source": "Whistle of the Emerald Raptor"
+	},
+	"4807": {
+		"name": "Ivory Tallstrider",
+		"spell": 8396,
+		"source": "Summon Ivory Tallstrider"
+	},
+	"5228": {
+		"name": "Skeletal Horse",
+		"item": 8583,
+		"source": "Horn of the Skeletal Mount"
+	},
+	"6080": {
+		"name": "Striped Frostsaber",
+		"item": 8631,
+		"source": "Reins of the Striped Frostsaber"
+	},
+	"6442": {
+		"name": "Tawny Sabercat",
+		"item": 12326,
+		"source": "Reins of the Tawny Sabercat"
+	},
+	"6443": {
+		"name": "Bengal Tiger",
+		"item": 8630,
+		"source": "Reins of the Bengal Tiger"
+	},
+	"6444": {
+		"name": "Spotted Frostsaber",
+		"item": 8632,
+		"source": "Reins of the Spotted Frostsaber"
+	},
+	"6447": {
+		"name": "Spotted Panther",
+		"item": 8628,
+		"source": "Reins of the Spotted Nightsaber"
+	},
+	"6448": {
+		"name": "Striped Nightsaber",
+		"item": 8629,
+		"source": "Reins of the Striped Nightsaber"
+	},
+	"6468": {
+		"name": "Obsidian Raptor",
+		"item": 8590,
+		"source": "Old Whistle of the Obsidian Raptor"
+	},
+	"6469": {
+		"name": "Mottled Red Raptor",
+		"item": 8586,
+		"source": "Whistle of the Mottled Red Raptor"
+	},
+	"6471": {
+		"name": "Ivory Raptor",
+		"item": 13317,
+		"source": "Whistle of the Ivory Raptor"
+	},
+	"6472": {
+		"name": "Turquoise Raptor",
+		"item": 8591,
+		"source": "Whistle of the Turquoise Raptor"
+	},
+	"6473": {
+		"name": "Violet Raptor",
+		"item": 8592,
+		"source": "Whistle of the Violet Raptor"
+	},
+	"6474": {
+		"name": "Brown Tallstrider",
+		"spell": 10800,
+		"source": "Summon Brown Tallstrider"
+	},
+	"6475": {
+		"name": "Gray Tallstrider",
+		"spell": 10801,
+		"source": "Summon Gray Tallstrider"
+	},
+	"6476": {
+		"name": "Pink Tallstrider",
+		"spell": 10802,
+		"source": "Summon Pink Tallstrider"
+	},
+	"6477": {
+		"name": "Purple Tallstrider",
+		"spell": 10803,
+		"source": "Summon Purple Tallstrider"
+	},
+	"6478": {
+		"name": "Turquoise Tallstrider",
+		"spell": 10804,
+		"source": "Summon Turquoise Tallstrider"
+	},
+	"6569": {
+		"name": "Blue Mechanostrider",
+		"item": 8595,
+		"source": "Blue Mechanostrider"
+	},
+	"8469": {
+		"name": "Warhorse",
+		"spell": 13819,
+		"source": "Summon Warhorse"
+	},
+	"9473": {
+		"name": "Red Mechanostrider",
+		"item": 8563,
+		"source": "Red Mechanostrider"
+	},
+	"9474": {
+		"name": "White Mechanostrider",
+		"item": 13326,
+		"source": "White Mechanostrider Mod A"
+	},
+	"9475": {
+		"name": "Fluorescent Green Mechanostrider",
+		"item": 13325,
+		"source": "Fluorescent Green Mechanostrider"
+	},
+	"9476": {
+		"name": "Unpainted Mechanostrider",
+		"item": 13322,
+		"source": "Unpainted Mechanostrider"
+	},
+	"9695": {
+		"name": "Frostsaber",
+		"item": 12302,
+		"source": "Reins of the Frostsaber"
+	},
+	"9714": {
+		"name": "Golden Sabercat",
+		"item": 12327,
+		"source": "Reins of the Golden Sabercat"
+	},
+	"9991": {
+		"name": "Nightsaber",
+		"item": 12303,
+		"source": "Reins of the Nightsaber"
+	},
+	"10426": {
+		"name": "Winterspring Frostsaber",
+		"item": 13086,
+		"source": "Reins of the Winterspring Frostsaber"
+	},
+	"10661": {
+		"name": "Green Mechanostrider",
+		"item": 13321,
+		"source": "Green Mechanostrider"
+	},
+	"10662": {
+		"name": "Purple Mechanostrider",
+		"item": 13323,
+		"source": "Purple Mechanostrider"
+	},
+	"10664": {
+		"name": "Red & Blue Mechanostrider",
+		"item": 13324,
+		"source": "Red & Blue Mechanostrider"
+	},
+	"10666": {
+		"name": "Icy Blue Mechanostrider",
+		"item": 13327,
+		"source": "Icy Blue Mechanostrider Mod A"
+	},
+	"10670": {
+		"name": "Red Skeletal Horse",
+		"item": 13331,
+		"source": "Red Skeletal Horse"
+	},
+	"10671": {
+		"name": "Blue Skeletal Horse",
+		"item": 13332,
+		"source": "Blue Skeletal Horse"
+	},
+	"10672": {
+		"name": "Brown Skeletal Horse",
+		"item": 13333,
+		"source": "Brown Skeletal Horse"
+	},
+	"10718": {
+		"name": "Rivendare's Deathcharger",
+		"item": 13335,
+		"source": "Deathcharger's Reins"
+	},
+	"10719": {
+		"name": "Red Skeletal Warhorse",
+		"item": 18248,
+		"source": "Red Skeletal Warhorse"
+	},
+	"10720": {
+		"name": "Green Skeletal Warhorse",
+		"item": 13334,
+		"source": "Green Skeletal Warhorse"
+	},
+	"10721": {
+		"name": "Purple Skeletal Warhorse",
+		"item": 18791,
+		"source": "Purple Skeletal Warhorse"
+	},
+	"11641": {
+		"name": "Brown Kodo",
+		"item": 15290,
+		"source": "Brown Kodo"
+	},
+	"12242": {
+		"name": "Teal Kodo",
+		"item": 15293,
+		"source": "Teal Kodo"
+	},
+	"12245": {
+		"name": "Green Kodo",
+		"item": 15292,
+		"source": "Green Kodo"
+	},
+	"12246": {
+		"name": "Gray Kodo",
+		"item": 15277,
+		"source": "Gray Kodo"
+	},
+	"14329": {
+		"name": "Swift Dawnsaber",
+		"item": 18768,
+		"source": "Reins of the Swift Dawnsaberx"
+	},
+	"14330": {
+		"name": "Black War Tiger",
+		"item": 18242,
+		"source": "Reins of the Black War Tiger"
+	},
+	"14331": {
+		"name": "Swift Frostsaber",
+		"item": 18766,
+		"source": "Reins of the Swift Frostsaber"
+	},
+	"14332": {
+		"name": "Swift Mistsaber",
+		"item": 18767,
+		"source": "Reins of the Swift Mistsaber"
+	},
+	"14334": {
+		"name": "Black War Wolf",
+		"item": 18245,
+		"source": "Horn of the Black War Wolf"
+	},
+	"14337": {
+		"name": "Black War Steed",
+		"item": 18241,
+		"source": "Black War Steed Bridle"
+	},
+	"14338": {
+		"name": "Swift White Steed",
+		"item": 18778,
+		"source": "Swift White Steed"
+	},
+	"14339": {
+		"name": "Swift Blue Raptor",
+		"item": 18788,
+		"source": "Swift Blue Raptor"
+	},
+	"14342": {
+		"name": "Swift Orange Raptor",
+		"item": 18790,
+		"source": "Swift Orange Raptor"
+	},
+	"14344": {
+		"name": "Swift Olive Raptor",
+		"item": 18789,
+		"source": "Swift Olive Raptor"
+	},
+	"14346": {
+		"name": "Swift White Ram",
+		"item": 18785,
+		"source": "Swift White Ram"
+	},
+	"14347": {
+		"name": "Swift Brown Ram",
+		"item": 18786,
+		"source": "Swift Brown Ram"
+	},
+	"14348": {
+		"name": "Black War Kodo",
+		"item": 18247,
+		"source": "Black War Kodo"
+	},
+	"14349": {
+		"name": "Great White Kodo",
+		"item": 18793,
+		"source": "Great White Kodo"
+	},
+	"14372": {
+		"name": "Black Battlestrider",
+		"item": 18243,
+		"source": "Black Battlestrider"
+	},
+	"14374": {
+		"name": "Swift Green Mechanostrider",
+		"item": 18772,
+		"source": "Swift Green Mechanostrider"
+	},
+	"14376": {
+		"name": "Swift White Mechanostrider",
+		"item": 18773,
+		"source": "Swift White Mechanostrider"
+	},
+	"14377": {
+		"name": "Swift Yellow Mechanostrider",
+		"item": 18774,
+		"source": "Swift Yellow Mechanostrider"
+	},
+	"14388": {
+		"name": "Black War Raptor",
+		"item": 18246,
+		"source": "Whistle of the Black War Raptor"
+	},
+	"14554": {
+		"name": "Dreadsteed",
+		"spell": 23161,
+		"source": "Summon Dreadsteed"
+	},
+	"14573": {
+		"name": "Swift Brown Wolf",
+		"item": 18796,
+		"source": "Horn of the Swift Brown Wolf"
+	},
+	"14574": {
+		"name": "Swift Gray Wolf",
+		"item": 18798,
+		"source": "Horn of the Swift Gray Wolf"
+	},
+	"14575": {
+		"name": "Swift Timber Wolf",
+		"item": 18797,
+		"source": "Horn of the Swift Timber Wolf"
+	},
+	"14576": {
+		"name": "Swift Gray Ram",
+		"item": 18787,
+		"source": "Swift Gray Ram"
+	},
+	"14577": {
+		"name": "Black War Ram",
+		"item": 18244,
+		"source": "Black War Ram"
+	},
+	"14578": {
+		"name": "Great Brown Kodo",
+		"item": 18794,
+		"source": "Great Brown Kodo"
+	},
+	"14579": {
+		"name": "Great Gray Kodo",
+		"item": 18795,
+		"source": "Great Gray Kodo"
+	},
+	"14582": {
+		"name": "Swift Palomino",
+		"item": 18776,
+		"source": "Swift Palomino"
+	},
+	"14583": {
+		"name": "Swift Brown Steed",
+		"item": 18777,
+		"source": "Swift Brown Steed"
+	},
+	"14584": {
+		"name": "Paladin Charger",
+		"spell": 23214,
+		"source": "Summon Charger"
+	},
+	"14632": {
+		"name": "Swift Stormsaber",
+		"item": 18902,
+		"source": "Reins of the Swift Stormsaber"
+	},
+	"14776": {
+		"name": "Frostwolf Howler",
+		"item": 19029,
+		"source": "Horn of the Frostwolf Howler"
+	},
+	"14777": {
+		"name": "Stormpike Battle Charger",
+		"item": 19030,
+		"source": "Stormpike Battle Charger"
+	},
+	"15289": {
+		"name": "Swift Razzashi Raptor",
+		"item": 19872,
+		"source": "Swift Razzashi Raptor"
+	},
+	"15290": {
+		"name": "Swift Zulian Tiger",
+		"item": 19902,
+		"source": "Swift Zulian Tiger"
+	},
+	"15293": {
+		"name": "Foror's Fabled Steed",
+		"item": 20221,
+		"source": "Foror's Fabled Steed"
+	},
+	"15677": {
+		"name": "Black Qiraji Battle Tank",
+		"spell": 25863,
+		"source": "Black Qiraji Resonating Crystal"
+	},
+	"15678": {
+		"name": "Blue Qiraji Battle Tank",
+		"item": 21218,
+		"source": "Blue Qiraji Resonating Crystal"
+	},
+	"15679": {
+		"name": "Green Qiraji Battle Tank",
+		"item": 21323,
+		"source": "Green Qiraji Resonating Crystal"
+	},
+	"15680": {
+		"name": "Yellow Qiraji Battle Tank",
+		"item": 21324,
+		"source": "Yellow Qiraji Resonating Crystal"
+	},
+	"15681": {
+		"name": "Red Qiraji Battle Tank",
+		"item": 21321,
+		"source": "Red Qiraji Resonating Crystal"
+	},
+	"15791": {
+		"name": "Mouth Tentacle",
+		"spell": 26332,
+		"source": "Summon Mouth Tentacle"
+	},
+	"15902": {
+		"name": "Reindeer",
+		"spell": 25859,
+		"source": "Reindeer"
+	},
+	"17158": {
+		"name": "Riding Turtle",
+		"item": 23720,
+		"source": "Riding Turtle"
+	}
+}
