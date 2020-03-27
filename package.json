@@ -1,5 +1,5 @@
 {
-  "name": "discordbot",
+  "name": "discord-imorph",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,11 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "discord",
+    "bot",
+    "imorph"
+  ],
   "author": "Ketho",
   "license": "MIT",
   "dependencies": {
@@ -16,6 +20,6 @@
     "dotenv": "^8.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.2"
   }
 }

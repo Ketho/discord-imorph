@@ -1,4 +1,4 @@
-# discord-iMorph
+# discord-imorph
 The bot for [iMorph](https://forum.wowmorphs.com/) Discord channel
 
 ## Installation

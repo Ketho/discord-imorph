@@ -7,13 +7,12 @@ module.exports = message => {
 		for (let key in data) {
 			if (data.hasOwnProperty(key)) {
 				let obj = data[key]
-				let name = obj.name, source = obj.source
-				fmsg = msgname[1].toLowerCase().replace("'", "")
-				fname = name.toLowerCase().replace("'", "")
-				fsource = source.toLowerCase().replace("'", "")
-				if (fname.indexOf(fmsg) > -1 || fsource.indexOf(fmsg) > -1) {
-					let source = obj.item ? "item="+obj.item : "spell="+obj.spell
-					message.channel.send("**"+name+"**  <https://classic.wowhead.com/"+source+">\n`.mount "+key+"`")
+				let lname = obj.name.toLowerCase().replace("'", "")
+				let lsource = obj.source.toLowerCase().replace("'", "")
+				let rname = msgname[1].toLowerCase().replace("'", "")
+				if (lname.indexOf(rname) > -1 || lsource.indexOf(rname) > -1) {
+					let linkType = obj.item ? "item="+obj.item : "spell="+obj.spell
+					message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/"+linkType+">\n`.mount "+key+"`")
 					return
 				}
 			}

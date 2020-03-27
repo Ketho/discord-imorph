@@ -1,5 +1,15 @@
 
 var data = require('../data/item.json')
+var rev = {}
+
+for (let k in data) {
+	let lowerName = data[k].name.toLowerCase().replace("'", "")
+	rev[lowerName] = {
+		"id" : k,
+		"name" : data[k].name,
+		"slot" : data[k].slot,
+	}
+}
 
 module.exports = message => {
 	let msgid = message.content.match(/\.item (\d+)/)
@@ -13,17 +23,23 @@ module.exports = message => {
 			message.channel.send("Could not find \""+id+"\"")
 	}
 	else if (msgname) {
-		let itemName = msgname[1].toLowerCase().replace("'", "")
-		for (let key in data) {
-			if (data.hasOwnProperty(key)) {
-				let obj = data[key]
-				let fname = obj.name.toLowerCase().replace("'", "")
-				if (fname.indexOf(itemName) > -1) {
-					message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+key+">\n`.item "+obj.slot+" "+key+"`")
-					return
+		let rname = msgname[1].toLowerCase().replace("'", "")
+		if (rev[rname]) {
+			let obj = rev[rname]
+			message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+obj.id+">\n`.item "+obj.slot+" "+obj.id+"`")
+		}
+		else {
+			for (let key in data) {
+				if (data.hasOwnProperty(key)) {
+					let obj = data[key]
+					let lname = obj.name.toLowerCase().replace("'", "")
+					if (lname.indexOf(rname) > -1) {
+						message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+key+">\n`.item "+obj.slot+" "+key+"`")
+						return
+					}
 				}
 			}
+			message.channel.send("Could not find \""+msgname[1]+"\"")
 		}
-		message.channel.send("Could not find \""+msgname[1]+"\"")
 	}
 }
