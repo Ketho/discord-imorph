@@ -7,7 +7,7 @@ for (let k in data) {
 	rev[lowerName] = {
 		"id" : k,
 		"name" : data[k].name,
-		"displayinfo" : data[k].displayinfo,
+		"display" : data[k].display,
 	}
 }
 
@@ -21,7 +21,7 @@ module.exports = message => {
 			if (obj.data == 11686)
 				message.channel.send("There is no DisplayID for **"+obj.name+"**  <https://classic.wowhead.com/npc="+id+">")
 			else
-				message.channel.send("<https://classic.wowhead.com/npc="+id+">\n`.npc "+obj.name+"`\n`.morph "+obj.displayinfo+"`")
+				message.channel.send("<https://classic.wowhead.com/npc="+id+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
 		}
 		else
 			message.channel.send("Could not find npc \""+id+"\"")
@@ -30,7 +30,7 @@ module.exports = message => {
 		let rname = msgname[1].toLowerCase().replace("'", "")
 		if (rev[rname]) {
 			let obj = rev[rname]
-			message.channel.send("<https://classic.wowhead.com/npc="+obj.id+">\n`.npc "+obj.name+"`\n`.morph "+obj.displayinfo+"`")
+			message.channel.send("<https://classic.wowhead.com/npc="+obj.id+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
 		}
 		else {
 			for (let key in data) {
@@ -38,7 +38,7 @@ module.exports = message => {
 					let obj = data[key]
 					let lname = obj.name.toLowerCase().replace("'", "")
 					if (lname.indexOf(rname) > -1) {
-						message.channel.send("<https://classic.wowhead.com/npc="+key+">\n`.npc "+obj.name+"`\n`.morph "+obj.displayinfo+"`")
+						message.channel.send("<https://classic.wowhead.com/npc="+key+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
 						return
 					}
 				}
