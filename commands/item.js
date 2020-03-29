@@ -2,8 +2,11 @@
 var data = require('../data/item.json')
 var rev = {}
 
+const util = require("../util")
+var sanitizeString = util.sanitizeString
+
 for (let k in data) {
-	let lowerName = data[k].name.toLowerCase().replace("'", "")
+	let lowerName = sanitizeString(data[k].name)
 	rev[lowerName] = {
 		"id" : k,
 		"name" : data[k].name,
@@ -23,7 +26,7 @@ module.exports = message => {
 			message.channel.send("Could not find \""+id+"\"")
 	}
 	else if (msgname) {
-		let rname = msgname[1].toLowerCase().replace("'", "")
+		let rname = sanitizeString(msgname[1])
 		if (rev[rname]) {
 			let obj = rev[rname]
 			message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+obj.id+">\n`.item "+obj.slot+" "+obj.id+"`")
@@ -32,7 +35,7 @@ module.exports = message => {
 			for (let key in data) {
 				if (data.hasOwnProperty(key)) {
 					let obj = data[key]
-					let lname = obj.name.toLowerCase().replace("'", "")
+					let lname = sanitizeString(obj.name)
 					if (lname.indexOf(rname) > -1) {
 						message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+key+">\n`.item "+obj.slot+" "+key+"`")
 						return
