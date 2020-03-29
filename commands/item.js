@@ -14,6 +14,14 @@ for (let k in data) {
 	}
 }
 
+var removed = [
+	17802, // "Thunderfury, Blessed Blade of the Windseeker DEPRECATED"
+]
+
+removed.forEach(function(item) {
+	delete data[item]
+})
+
 module.exports = message => {
 	let msgid = message.content.match(/\.item (\d+)/)
 	let msgname = message.content.match(/\.item (.+)/)

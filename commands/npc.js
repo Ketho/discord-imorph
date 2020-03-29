@@ -14,6 +14,14 @@ for (let k in data) {
 	}
 }
 
+var removed = [
+	3957, // "Jainay Featherbreeze"
+]
+
+removed.forEach(function(item) {
+	delete data[item]
+})
+
 module.exports = message => {
 	let msgid = message.content.match(/\.npc (\d+)/)
 	let msgname = message.content.match(/\.npc (.+)/)
