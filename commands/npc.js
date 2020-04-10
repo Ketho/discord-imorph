@@ -22,6 +22,10 @@ removed.forEach(function(item) {
 	delete data[item]
 })
 
+function sendNpcMessage(message, id, name, display) {
+	message.channel.send("<https://classic.wowhead.com/npc="+id+">\n`.npc "+name+"`\n`.morph "+display+"`")
+}
+
 module.exports = message => {
 	let msgid = message.content.match(/\.npc (\d+)/)
 	let msgname = message.content.match(/\.npc (.+)/)
@@ -32,16 +36,16 @@ module.exports = message => {
 			if (obj.data == 11686)
 				message.channel.send("There is no DisplayID for **"+obj.name+"**  <https://classic.wowhead.com/npc="+id+">")
 			else
-				message.channel.send("<https://classic.wowhead.com/npc="+id+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
+				sendNpcMessage(message, id, obj.name, obj.display)
 		}
 		else
-			message.channel.send("Could not find npc \""+id+"\"")
+			message.channel.send("Could not find NPC ID "+id)
 	}
 	else if (msgname) {
 		let rname = sanitizeString(msgname[1])
 		if (rev[rname]) {
 			let obj = rev[rname]
-			message.channel.send("<https://classic.wowhead.com/npc="+obj.id+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
+			sendNpcMessage(message, obj.id, obj.name, obj.display)
 		}
 		else {
 			for (let key in data) {
@@ -49,7 +53,7 @@ module.exports = message => {
 					let obj = data[key]
 					let lname = sanitizeString(obj.name)
 					if (lname.indexOf(rname) > -1) {
-						message.channel.send("<https://classic.wowhead.com/npc="+key+">\n`.npc "+obj.name+"`\n`.morph "+obj.display+"`")
+						sendNpcMessage(message, key, obj.name, obj.display)
 						return
 					}
 				}

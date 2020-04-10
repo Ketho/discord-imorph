@@ -22,6 +22,10 @@ removed.forEach(function(item) {
 	delete data[item]
 })
 
+function sendItemMessage(message, id, name, slot) {
+	message.channel.send("**"+name+"**  <https://classic.wowhead.com/item="+id+">\n`.item "+slot+" "+id+"`")
+}
+
 module.exports = message => {
 	let msgid = message.content.match(/\.item (\d+)/)
 	let msgname = message.content.match(/\.item (.+)/)
@@ -29,15 +33,15 @@ module.exports = message => {
 		let id = msgid[1]
 		let obj = data[id]
 		if (obj)
-			message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+id+">\n`.item "+obj.slot+" "+id+"`")
+			sendItemMessage(message, id, obj.name, obj.slot)
 		else
-			message.channel.send("Could not find \""+id+"\"")
+			message.channel.send("Could not find Item ID "+id)
 	}
 	else if (msgname) {
 		let rname = sanitizeString(msgname[1])
 		if (rev[rname]) {
 			let obj = rev[rname]
-			message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+obj.id+">\n`.item "+obj.slot+" "+obj.id+"`")
+			sendItemMessage(message, obj.id, obj.name, obj.slot)
 		}
 		else {
 			for (let key in data) {
@@ -45,7 +49,7 @@ module.exports = message => {
 					let obj = data[key]
 					let lname = sanitizeString(obj.name)
 					if (lname.indexOf(rname) > -1) {
-						message.channel.send("**"+obj.name+"**  <https://classic.wowhead.com/item="+key+">\n`.item "+obj.slot+" "+key+"`")
+						sendItemMessage(message, key, obj.name, obj.slot)
 						return
 					}
 				}
