@@ -67,13 +67,13 @@ module.exports = (client, message) => {
 	let isModerator = message.member && mod_roles[message.member._roles[0]] 
 
 	if (content.startsWith('.') && request_channels[message.channel.id]) {
-		if (content.startsWith('.itemset'))
+		if (lowerStr.startsWith('.itemset'))
 			itemset(message)
-		else if (content.startsWith('.item'))
+		else if (lowerStr.startsWith('.item'))
 			item(message)
-		else if (content.startsWith('.mount'))
+		else if (lowerStr.startsWith('.mount'))
 			mount(message)
-		else if (content.startsWith('.npc'))
+		else if (lowerStr.startsWith('.npc') || lowerStr.startsWith('.morph'))
 			npc(message)
 	}
 	else if (content == 'ping' && isModerator)
