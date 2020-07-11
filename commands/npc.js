@@ -27,8 +27,8 @@ function sendNpcMessage(message, id, name, display) {
 }
 
 module.exports = message => {
-	let msgid = message.content.match(/\.npc (\d+)/)
-	let msgname = message.content.match(/\.npc (.+)/)
+	let msgid = message.content.match(/\.npc (\d+)/) || message.content.match(/\.morph (\d+)/)
+	let msgname = message.content.match(/\.npc (.+)/) || message.content.match(/\.morph (.+)/)
 	if (msgid) {
 		let id = msgid[1]
 		let obj = data[id]
