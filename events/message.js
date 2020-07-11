@@ -62,18 +62,17 @@ function getTime() {
 
 module.exports = (client, message) => {
 	let content = message.content
-	let lowerStr = content.toLowerCase()
 	// check only for the first role
 	let isModerator = message.member && mod_roles[message.member._roles[0]] 
 
 	if (content.startsWith('.') && request_channels[message.channel.id]) {
-		if (lowerStr.startsWith('.itemset'))
+		if (content.startsWith('.itemset'))
 			itemset(message)
-		else if (lowerStr.startsWith('.item'))
+		else if (content.startsWith('.item'))
 			item(message)
-		else if (lowerStr.startsWith('.mount'))
+		else if (content.startsWith('.mount'))
 			mount(message)
-		else if (lowerStr.startsWith('.npc') || lowerStr.startsWith('.morph'))
+		else if (content.startsWith('.npc') || content.startsWith('.morph'))
 			npc(message)
 	}
 	else if (content == 'ping' && isModerator)
