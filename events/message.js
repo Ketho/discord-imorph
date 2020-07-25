@@ -68,7 +68,7 @@ module.exports = (client, message) => {
 	if (content.startsWith('.') && request_channels[message.channel.id]) {
 		if (content.indexOf("noggen") > -1)
 			message.channel.send("<https://classic.wowhead.com/item=8529/noggenfogger-elixir>\n`.morph 7550`")
-		else if (content.indexOf("deviate") > -1)
+		else if (content.indexOf("deviate delight") > -1)
 			message.channel.send("<https://classic.wowhead.com/item=6657/savory-deviate-delight>\n`.morph 4617,4618,4619,4620`")
 		else if (content.startsWith('.itemset'))
 			itemset(message)
