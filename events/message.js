@@ -62,14 +62,15 @@ function getTime() {
 
 module.exports = (client, message) => {
 	let content = message.content
+	let lcontent = content.toLowerCase()
 	// check only for the first role
 	let isModerator = message.member && mod_roles[message.member._roles[0]] 
 
 	if (content.startsWith('.') && request_channels[message.channel.id]) {
-		if (content.indexOf("noggen") > -1)
-			message.channel.send("**Noggenfogger Elixir**  <https://classic.wowhead.com/item=8529/noggenfogger-elixir>\n`.morph 7550`")
-		else if (content.indexOf("deviate delight") > -1)
-			message.channel.send("**Savory Deviate Delight**  <https://classic.wowhead.com/item=6657/savory-deviate-delight>\n`.morph 4617,4618,4619,4620`")
+		if (lcontent.indexOf("noggen") > -1)
+			message.channel.send("**Noggenfogger Elixir**  <https://classic.wowhead.com/item=8529>\n`.morph 7550`")
+		else if (lcontent.indexOf("deviate delight") > -1)
+			message.channel.send("**Savory Deviate Delight**  <https://classic.wowhead.com/item=6657>\n`.morph 4617,4618,4619,4620`")
 		else if (content.startsWith('.itemset'))
 			itemset(message)
 		else if (content.startsWith('.item'))
