@@ -66,7 +66,9 @@ module.exports = (client, message) => {
 	let isModerator = message.member && mod_roles[message.member._roles[0]] 
 
 	if (content.startsWith('.') && request_channels[message.channel.id]) {
-		if (content.startsWith('.itemset'))
+		if (content.indexOf("noggen") > -1)
+			message.channel.send("<https://classic.wowhead.com/item=8529/noggenfogger-elixir>\n`.morph 7550`")
+		else if (content.startsWith('.itemset'))
 			itemset(message)
 		else if (content.startsWith('.item'))
 			item(message)
